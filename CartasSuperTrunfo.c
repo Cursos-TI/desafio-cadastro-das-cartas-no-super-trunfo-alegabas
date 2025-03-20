@@ -11,6 +11,24 @@ int main() {
         char cidade[15], cidade1[20];
         float area, area1;
         float pib, pib1;
+        float divisao, divisao1, divisao2, divisao3;
+        float densidade_populacional, densidade_populacional1;
+        float pib_per_capita, pib_per_capita1;
+        populacao = 12325000;
+        area = 1521.11;
+        pib = 699.28;
+        populacao1 = 6748000;
+        area1 = 1200.25;
+        pib1 = 300.50;
+
+        // Calcula a Densidade Populacional
+        densidade_populacional = populacao / area;
+        densidade_populacional1 = populacao1 / area1;
+
+        // Calcula o PIB per Capita
+        pib_per_capita = (pib * 1e9) / populacao;
+        pib_per_capita1 = (pib1 * 1e9) / populacao1;
+
 
         // Entrada de dados da primeira carta (São Paulo)
 
@@ -70,6 +88,8 @@ int main() {
         printf("Área: %.2f km2\n", area);
         printf("PIB: %.2f bilhões de reais\n", pib);
         printf("Número de Pontos Turísticos: %d\n", turisticos);
+        printf("Densidade Populacional: %.2f hab/km2\n", densidade_populacional);
+        printf("PIB per Capita: %.2f reais\n", pib_per_capita);
 
         // Imprimir dados inseridos da segunda carta
 
@@ -81,6 +101,8 @@ int main() {
         printf("Área: %.2f km2\n", area1);
         printf("PIB: %.2f bilhões de reais\n", pib1);
         printf("Número de Pontos Turísticos: %d\n", turisticos1);
+        printf("Densidade Populacional: %.2f hab/km2\n", densidade_populacional1);
+        printf("PIB per Capita: %.2f reais\n", pib_per_capita1);
 
 
 
